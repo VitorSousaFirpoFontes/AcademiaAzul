@@ -1,0 +1,68 @@
+/* Garantir que a página ocupe toda a altura da tela */ 
+html, body {
+    height: 100%; /* Define a altura da página como 100% da altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+body {
+    background-image: url('imagemacademia.jpg'); /* Define a imagem de fundo */
+
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    color: white; /* Cor do texto em branco para contraste */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+
+    /* Usando Flexbox para centralizar o conteúdo */
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinha o conteúdo de texto no centro */
+    height: 100vh; /* Garantir que o body ocupe toda a altura da tela */
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #007bff; /* Cor azul para o título */
+}
+
+.btn {
+    background-color: white;  /* Cor de fundo branca */
+    color: #007bff;           /* Cor do texto azul */
+    border: 2px solid #007bff;  /* Borda azul */
+    padding: 10px 20px;       /* Espaçamento interno */
+    font-size: 16px;          /* Tamanho da fonte */
+    text-align: center;       /* Alinha o texto ao centro */
+    text-decoration: none;    /* Remove o sublinhado */
+    border-radius: 5px;       /* Cantos arredondados */
+    transition: all 0.3s ease; /* Transição suave para o hover */
+}
+
+.btn:hover {
+    background-color: #007bff;  /* Fundo azul ao passar o mouse */
+    color: white;               /* Cor do texto branca */
+    border-color: #0056b3;      /* Borda azul mais escura ao passar o mouse */
+}
+
+/* Ajustes para o layout em telas menores */
+@media (max-width: 700px){
+    .btn {
+        width: 100%; /* Botões ocupando toda a largura da tela em dispositivos pequenos */
+    }
+    .btn {
+        background-color: white;  /* Cor de fundo branca */
+        color: #007bff;           /* Cor do texto azul */
+        border: 2px solid #007bff;  /* Borda azul */
+        padding: 10px 20px;       /* Espaçamento interno */
+        font-size: 16px;          /* Tamanho da fonte */
+        text-align: center;       /* Alinha o texto ao centro */
+        text-decoration: none;    /* Remove o sublinhado */
+        border-radius: 5px;       /* Cantos arredondados */
+        transition: all 0.3s ease; /* Transição suave para o hover */
+        max-width: 15rem;
+    }
+}
