@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 mt-5">
-                <form action="processa_cadastro_paciente.php" method="POST" class="border p-4 shadow-sm rounded">
+                <form action="inserirAluno.php" method="POST" class="border p-4 shadow-sm rounded">
                     <h2 class="text-center mb-4">Cadastrar aluno</h2>
                     
                     <?php if (isset($_GET['sucesso'])): ?>
